@@ -7,4 +7,6 @@ const onInput = () => {
   rangeText.style.fontSize = `${lineSize}px`;
 };
 
+onInput();
+
 rangeLine.addEventListener("input", onInput);

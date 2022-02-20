@@ -6,10 +6,10 @@ const setOutput = value => {
 };
 
 const input = () => {
-  if (inputName.value) {
-    setOutput(inputName.value);
-  } else {
+  if (inputName.value === "") {
     setOutput("Anonymous!");
+  } else {
+    setOutput(inputName.value);
   }
 };
 
