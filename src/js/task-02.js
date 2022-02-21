@@ -6,9 +6,7 @@ const ingredient = ingredients.map(ingredient => {
   const listEl = document.createElement("li");
   listEl.classList.add("item");
   listEl.textContent = ingredient;
-  list.appendChild(listEl);
+  return listEl;
 });
 
-// list.appendChild(...ingredient);
-
-// appendChild здесь не работает (может что - то не так делаю)
+list.append(...ingredient);
